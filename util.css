@@ -1,0 +1,40 @@
+.selectNone {
+    user-select: none;
+}
+
+.animated {
+    animation-duration: 1s;
+}
+.animated.animate-fast {
+    animation-duration: 0.5s;
+}
+.animated.animate-slow {
+    animation-duration: 1.5s;
+}
+.animated.animate-med {
+    animation-duration: 0.7s;
+}
+.animated.animate-reverse {
+    animation-direction: reverse;
+}
+.animated.animate-smooth {
+    animation-timing-function: ease-in-out;
+}
+.grid {
+    display: grid;
+}
+.font-title {
+    font-family: Poppins, sans-serif;
+    font-size: 4.7rem;
+}
+.font-pr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+}
+.font-subtitle {
+    font-family: Poppins, sans-serif;
+    font-size: 1.7rem;
+}
+.dot i {
+    color: #2196f3;
+}
