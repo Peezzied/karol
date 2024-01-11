@@ -27,6 +27,13 @@
     font-family: Poppins, sans-serif;
     font-size: 4.7rem;
 }
+.font-title-normal {
+    font-family: Poppins, sans-serif;
+}
+.font-title-med {
+    font-family: Poppins, sans-serif;
+    font-size: 2.7rem;
+}
 .font-pr {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
@@ -35,6 +42,25 @@
     font-family: Poppins, sans-serif;
     font-size: 1.7rem;
 }
+.font-muted {
+    color: #adadad;
+}
+
 .dot i {
     color: #2196f3;
+}
+.divider {
+    height: 3em;
+}
+.corner-normal {
+    border-radius: 20px;
+}
+.card-hover {
+    border: 2px solid;
+    border-color: var(--scheme-surface-color);
+    transition: all .2s;
+}
+.card-hover:hover {
+    border-color: var(--scheme-blue);
+
 }

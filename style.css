@@ -1,3 +1,14 @@
+:root {
+    --p: 207 90% 54%;
+    --s: 213.12 93.902% 67.843%;
+    --pos-x: 0;
+    --pos-y: 0;
+    --pos-r: 0;
+    --color: rgba(252, 209, 22);
+    --timing: 700ms; 
+    --color-primary: rgba(255, 255, 255);
+
+}
 /* RESET */
 
 * {
@@ -21,16 +32,6 @@ img, picture, svg, video {
 }
 
 /* MAIN */
-:root {
-    --p: 207 90% 54%;
-    --s: 213.12 93.902% 67.843%;
-    --pos-x: 0;
-    --pos-y: 0;
-    --pos-r: 0;
-    --color: rgba(252, 209, 22);
-    --timing: 700ms; 
-    --color-primary: rgba(255, 255, 255);
-}
 .container {
     height: 100%;
 }
@@ -164,7 +165,7 @@ body {
     text-align: center;
     line-height: 1.1em;
     animation-name: header;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.19, 0.92);
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .head .content .name {
     background-image: linear-gradient(20deg,hsl(var(--p)),hsl(var(--s)));
@@ -181,11 +182,13 @@ body {
 .btn {
     border: 2.7px solid;
     padding: 10px 20px;
-    transition: transform .3s;
+    transition: all .3s;
     cursor: pointer;
 }
 .btn:hover {
     transform: translateY(-7px);
+    background-color: white;
+    color: #121212;
 }
 .country {
     mix-blend-mode: screen;
@@ -200,9 +203,6 @@ body {
     width: 100%;
     transition: background-size, 1s;
     /* animation: expand var(--timing) ease forwards; */
-}
-.countryChange {
-    background-size: 5000% 5000%;
 }
 /* @keyframes expand {
     from {
@@ -228,10 +228,10 @@ body {
     min-height: 100%;
     grid-template-columns: 1.7fr 2fr;
     grid-template-rows: 70% 10%;
-    column-gap: 2em;
+    column-gap: 4em;
 }
 .about .description {
-    grid-template-rows: 1fr 2.6fr;
+    grid-template-rows: 1fr 2.2fr;
 }
 .description {
     grid-row: span 2;
@@ -250,6 +250,25 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     margin-top: .5em;
+    width: 100%;
+}
+.description .subtitle div {
+    cursor: pointer;
+    position: relative;
+
+}
+.description .subtitle div::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.1em;
+    background-color: var(--scheme-blue);
+    transition: width 300ms, transform 300ms;
+}
+.description .subtitle div:hover::after, .description .subtitle div:focus::after {
+    width: 100%;
 }
 .description .pr {
     line-height: 1.5em;
@@ -259,7 +278,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
 }
 .about .socials > * {
     display: flex;
@@ -270,4 +289,46 @@ body {
     height: 100%;
     color: initial;
 }
+.description .heading {
+    grid-template-rows: 1fr .7fr;
+}
+.skills {
+    height: 100%;
+}
+.skills .cards-container:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+}
+.skills .cards-container:nth-of-type(2) > div {
+    background-color: var(--scheme-surface-color);
+    width: 100%;
+    min-height: 8em;
+    padding: 1.2em;
+    display: grid;
+    grid-template-rows: .8fr 2fr;
+    grid-template-columns: .4fr 7fr;
 
+
+}
+.skills .cards-container:nth-of-type(2) > div > div:nth-of-type(3) {
+    grid-column: span 2;
+    padding-left: .7em;
+}
+.skills .cards-container:nth-of-type(2) > div > div:nth-of-type(2) {
+    text-transform: uppercase;
+}
+.skills .cards-container:nth-of-type(4) {
+    height: 100%;
+}
+.cards {
+    height: 100%;
+}
+.card {
+    --square: 6em;
+    background-color: var(--scheme-surface-color);
+    color: green;
+    width: var(--square);
+    height: var(--square);
+}
