@@ -29,6 +29,8 @@ body {
 img, picture, svg, video {
     display: block;
     max-width: 100%;
+    vertical-align: middle;
+    height: auto;
 }
 
 /* MAIN */
@@ -313,22 +315,51 @@ body {
 
 }
 .skills .cards-container:nth-of-type(2) > div > div:nth-of-type(3) {
-    grid-column: span 2;
-    padding-left: .7em;
+    grid-column: 2;
 }
 .skills .cards-container:nth-of-type(2) > div > div:nth-of-type(2) {
     text-transform: uppercase;
 }
-.skills .cards-container:nth-of-type(4) {
+.skills .cards-container:nth-of-type(4),
+.skills .cards-container:nth-of-type(5) {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
-.cards {
+.skills .cards-container:nth-of-type(4) .cards,
+.skills .cards-container:nth-of-type(5) .cards  {
     height: 100%;
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: start;
+    margin-left: 1em;
 }
-.card {
+.skills .cards-container:nth-of-type(4) .cards > li,
+.skills .cards-container:nth-of-type(5) .cards > li {
     --square: 6em;
     background-color: var(--scheme-surface-color);
-    color: green;
+    color: rgb(255, 255, 255);
     width: var(--square);
     height: var(--square);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+
+}
+.skills .cards-container:nth-of-type(4) .cards > li > img,
+.skills .cards-container:nth-of-type(5) .cards > li > img {
+    width: 45%;
+    height: auto;
+}
+.skills .cards-container:nth-of-type(4) .cards > li > p,
+.skills .cards-container:nth-of-type(5) .cards > li > p {
+    font-size: 12.8px;
+    width: 100%;
+    text-align: center;
 }

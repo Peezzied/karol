@@ -1,12 +1,44 @@
-import {top} from './index.js'
+import {top, technologies} from './index.js'
+
 const topCards = document.querySelectorAll('.cards-container:nth-of-type(2) div')
-console.log(topCards)
+const multimediaElement = document.querySelector('.cards-container:nth-of-type(4) .cards')
+const web = document.querySelector('.cards-container:nth-of-type(5) .cards')
+console.log(multimediaElement)
 
 top.forEach((item, index)=>{
-    const content = `
+    addCardList(topCards, index,
+    `
         <div class="emoji">${item.emoji}</div>
         <div class="title font-muted font-title-normal">${item.title}</div>
         <div class="body">${item.body}</div>
-    `
-    topCards[index].innerHTML = content
+    `)
+
 })
+technologies.forEach((item)=>{
+    const content = `
+    <li class="corner-normal card-hover">
+        <img src="${item.img}" loading="lazy" alt="${item.name} logo">
+        <p class="font-pr">${item.name}</p>
+    </li> `
+    if (item.category === 'multimedia'){
+        addCard(multimediaElement, content)
+    } else {
+        addCard(web, content)
+    }
+})
+
+function addCardList(data, index, content){
+    data[index].innerHTML = content
+}
+function addCard(data, content){
+    data.sort((a, b) => {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+    });
+    data.innerHTML += content
+}
