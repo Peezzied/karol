@@ -53,7 +53,7 @@
     height: 3em;
 }
 .corner-normal {
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .card-hover {
     border: 2px solid;
@@ -64,3 +64,4 @@
     border-color: var(--scheme-blue);
 
 }
+

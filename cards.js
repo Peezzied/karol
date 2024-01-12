@@ -14,6 +14,15 @@ top.forEach((item, index)=>{
     `)
 
 })
+technologies.sort((a, b)=> {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+});
 technologies.forEach((item)=>{
     const content = `
     <li class="corner-normal card-hover">
@@ -31,14 +40,5 @@ function addCardList(data, index, content){
     data[index].innerHTML = content
 }
 function addCard(data, content){
-    data.sort((a, b) => {
-        if (a.name < b.name) {
-          return -1;
-        }
-        if (a.name > b.name) {
-          return 1;
-        }
-        return 0;
-    });
     data.innerHTML += content
 }
