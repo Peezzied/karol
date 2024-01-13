@@ -25,7 +25,7 @@
 }
 .font-title {
     font-family: Poppins, sans-serif;
-    font-size: 4.1vw;
+    font-size: 4.7rem;
 }
 .font-title-normal {
     font-family: Poppins, sans-serif;
@@ -92,6 +92,7 @@
 }
 
 .container {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;

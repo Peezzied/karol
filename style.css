@@ -93,13 +93,13 @@ body > div {
     }
 }
 .navbar .logo {
-    font-size: 2.3vw;
+    font-size: 2.7rem;
     font-family: 'Poppins', sans-serif;
     animation-name: defaultLoadLeft;
     display: flex;
 }
 .navbar .menu {
-    font-size: 2.3vw;
+    font-size: 2.7rem;
     text-align: center;
     animation-name: defaultLoadRight;
 }
@@ -157,14 +157,15 @@ body > div {
     flex-direction: column;
     align-items: center;
     gap: 3.5em;
-    width: 100%;
+    max-width: 100%;
 }
 .head .content {
-    font-size: 4.3vw;
+    font-size: var(--fs-heading);
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 0px;
-    width: 15em;
+
+    width: fit-content;
     text-align: center;
     line-height: 1.1em;
     animation-name: header;

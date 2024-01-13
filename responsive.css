@@ -2,6 +2,9 @@
     .container {
         max-width: 475px;
     }
+    /* :root {
+        --fs-heading: 3rem;
+    } */
 }
 
 /* sm */
@@ -18,10 +21,14 @@
     }
 }
 
+
 /* lg */
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
+    }
+    :root {
+        --fs-heading: 4.2rem;
     }
 }
 
@@ -30,6 +37,9 @@
     .container {
         max-width: 1280px;
     }
+    :root {
+        --fs-heading: 5rem;
+    }
 }
 
 /* xxl */
@@ -37,4 +47,6 @@
     .container {
         max-width: 1536px;
     }
+
+
 }
