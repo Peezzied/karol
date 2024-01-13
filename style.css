@@ -367,3 +367,24 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+.projects .bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    gap: 1em;
+}
+
+.projects .bento > div {
+    background-color: var(--scheme-surface-color);
+    border-radius: 15px;
+}
+.projects .bento > div:nth-of-type(1) {
+    grid-column: span 2;
+}
+.projects .bento > div:nth-of-type(2) {
+    grid-column: span 2;
+}
+.projects {
+    height: 100%;
+}
