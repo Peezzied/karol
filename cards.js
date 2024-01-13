@@ -1,4 +1,4 @@
-import {top, technologies} from './index.js'
+import {top, technologies, addCard, addCardList} from './index.js'
 
 const topCards = document.querySelectorAll('.cards-container:nth-of-type(2) div')
 const multimediaElement = document.querySelector('.cards-container:nth-of-type(4) .cards')
@@ -36,9 +36,3 @@ technologies.forEach((item)=>{
     }
 })
 
-function addCardList(data, index, content){
-    data[index].innerHTML = content
-}
-function addCard(data, content){
-    data.innerHTML += content
-}

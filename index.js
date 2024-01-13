@@ -84,3 +84,48 @@ export const technologies = [
         name: 'Skript'
     }
 ]
+export const bento = [
+    {
+        img: './icons/skript.png',
+        name: 'Test',
+        url: '',
+        description: 'Lorem ipsum dolor sit amet.',
+        width: '33%'
+    },
+    {
+        img: './icons/skript.png',
+        name: 'Teswt',
+        url: '',
+        description: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+        img: './icons/skript.png',
+        name: 'Teswt',
+        url: '',
+        description: 'Lorem ipsum dolor sit amet.',
+        width: '33%'
+
+    },
+    {
+        img: './icons/skript.png',
+        name: 'Teswt',
+        url: '',
+        description: 'Lorem ipsum dolor sit amet.',
+        width: '50%'
+
+    },
+    {
+        img: './icons/skript.png',
+        name: 'Teswt',
+        url: '',
+        description: 'Lorem ipsum dolor sit amet.',
+        width: ''
+
+    }
+]
+export function addCardList(data, index, content){
+    data[index].innerHTML = content
+}
+export function addCard(data, content){
+    data.innerHTML += content
+}
