@@ -65,3 +65,28 @@
 
 }
 
+.subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: .5em;
+    width: 100%;
+}
+.subtitle div {
+    cursor: pointer;
+    position: relative;
+
+}
+.subtitle div::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.1em;
+    background-color: var(--scheme-blue);
+    transition: width 300ms, transform 300ms;
+}
+.subtitle div:hover::after, .subtitle div:focus::after {
+    width: 100%;
+}

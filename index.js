@@ -87,9 +87,19 @@ export const technologies = [
 export const bentoData = [
     {
         title: 'One',
-        body: 'Lorem ipsum'
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
     },
     {
         title: 'Two',
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. '
     },
+    {
+        title: 'Three',
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
+    },
+    {
+        title: 'Four',
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
+    }
+
 ]
