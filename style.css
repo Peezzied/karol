@@ -34,13 +34,13 @@ img, picture, svg, video {
 }
 
 /* MAIN */
-.container {
-    height: 100%;
-}
 
 body {
     background-color: #121212;
     color: white;
+}
+body > div {
+    height: 100%;
 }
 .navbar {
     display: flex;
@@ -93,13 +93,13 @@ body {
     }
 }
 .navbar .logo {
-    font-size: 2.7rem;
+    font-size: 2.3vw;
     font-family: 'Poppins', sans-serif;
     animation-name: defaultLoadLeft;
     display: flex;
 }
 .navbar .menu {
-    font-size: 2.7rem;
+    font-size: 2.3vw;
     text-align: center;
     animation-name: defaultLoadRight;
 }
@@ -160,7 +160,7 @@ body {
     width: 100%;
 }
 .head .content {
-    font-size: 5rem;
+    font-size: 4.3vw;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 0px;
@@ -286,7 +286,8 @@ body {
     min-height: 8em;
     padding: 1.2em;
     display: grid;
-    grid-template-rows: .8fr 2fr;
+    grid-template-rows: 0fr 2fr;
+    row-gap: .2em;
     grid-template-columns: .4fr 7fr;
 
 

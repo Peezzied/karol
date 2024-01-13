@@ -25,7 +25,7 @@
 }
 .font-title {
     font-family: Poppins, sans-serif;
-    font-size: 4.7rem;
+    font-size: 4.1vw;
 }
 .font-title-normal {
     font-family: Poppins, sans-serif;
@@ -89,4 +89,13 @@
 }
 .subtitle div:hover::after, .subtitle div:focus::after {
     width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* margin: 0 auto; */
+    
 }
