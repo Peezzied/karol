@@ -1,8 +1,10 @@
-import {top, technologies} from './index.js'
+import {top, technologies, bentoData} from './index.js'
 
 const topCards = document.querySelectorAll('.cards-container:nth-of-type(2) div')
 const multimediaElement = document.querySelector('.cards-container:nth-of-type(4) .cards')
 const web = document.querySelector('.cards-container:nth-of-type(5) .cards')
+const bentoTitle = document.querySelectorAll('.projects .bento > div .description > div:nth-of-type(1)')
+const bentoBody = document.querySelectorAll('.projects .bento > div .description > div:nth-of-type(2)')
 console.log(multimediaElement)
 
 top.forEach((item, index)=>{
@@ -34,6 +36,11 @@ technologies.forEach((item)=>{
     } else {
         addCard(web, content)
     }
+})
+
+bentoData.forEach((item, index)=>{
+    addCardList(bentoBody, index, item.title)
+    addCardList(bentoTitle, index, item.body)
 })
 
 function addCardList(data, index, content){

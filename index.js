@@ -84,3 +84,12 @@ export const technologies = [
         name: 'Skript'
     }
 ]
+export const bentoData = [
+    {
+        title: 'One',
+        body: 'Lorem ipsum'
+    },
+    {
+        title: 'Two',
+    },
+]
