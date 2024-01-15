@@ -1,16 +1,70 @@
+/* @media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+    :root {
+        --fs-heading: 2.3rem;
+    }
+}*/
+@media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+    :root {
+        --fs-heading: 2rem;
+        /* --fs-title: 1rem; */
+        --fs-heading-bar: .9em;
+        --fs-heading-more: .6rem;
+        --fs-heading-logo: 1.4rem;
+        --fs-title: 2.7rem;
+    }
+    .btn {
+        border: 1.5px solid;
+    }
+    
+}
+@media (min-width: 404px) {
+    .container {
+        max-width: 404px;
+    }
+    :root {
+        --fs-heading: 2.9rem;
+        --fs-heading-bar: 1rem;
+        --fs-heading-more: 1rem;
+        --fs-heading-logo: 2rem;
+
+        
+    }
+    .btn {
+        border: 2px solid;
+    }
+}
 @media (min-width: 475px) {
     .container {
         max-width: 475px;
     }
-    /* :root {
-        --fs-heading: 3rem;
-    } */
+    :root {
+        --fs-heading: 3.3rem;
+        --fs-heading-bar: 1.2rem;
+        --fs-heading-more: 1.2rem;
+        --fs-title: 3.4rem;
+    }
+    .btn {
+        border: 2.7px solid;
+    }
+
 }
 
 /* sm */
 @media (min-width: 640px) {
     .container {
         max-width: 640px;
+    }
+    :root {
+        --fs-heading: 4.5rem;
+        --fs-heading-bar: 1.3rem;
+        --fs-heading-logo: 2.7rem;
+        --fs-title: 4.7rem;
     }
 }
 
@@ -19,17 +73,41 @@
     .container {
         max-width: 768px;
     }
+    :root {
+        --fs-heading: 5rem;
+    }
+    
 }
 
+@media (max-width: 1024px) {
+    .skills > .title {
+        display: flex;
+        justify-content: flex-end;
+        line-height: 0.9em;
+    }
+    .projects > .title {
+        justify-content: flex-start;
+        line-height: 0.9em;
+    }
 
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 7em;
+        grid-template-areas: 
+        "img"
+        "description"
+        "socials"
+    ;
+    }
+}
 /* lg */
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
     }
-    :root {
+    /* :root {
         --fs-heading: 4.2rem;
-    }
+    } */
 }
 
 /* xl */
