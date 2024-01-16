@@ -9,6 +9,7 @@
 @media (min-width: 320px) {
     .container {
         max-width: 320px;
+        padding: 0em 1em;
     }
     :root {
         --fs-heading: 2rem;
@@ -17,6 +18,10 @@
         --fs-heading-more: .6rem;
         --fs-heading-logo: 1.4rem;
         --fs-title: 2.7rem;
+        --fs-pr: 0.8rem;
+        --fs-title-med: calc(var(--fs-pr) + 0.6em);
+        --fs-small-cards: 10.8px;
+        --square: 4.7em;
     }
     .btn {
         border: 1.5px solid;
@@ -26,14 +31,15 @@
 @media (min-width: 404px) {
     .container {
         max-width: 404px;
+        padding: 0em 2em;
     }
     :root {
         --fs-heading: 2.9rem;
         --fs-heading-bar: 1rem;
         --fs-heading-more: 1rem;
         --fs-heading-logo: 2rem;
-
-        
+        --fs-pr: 0.9rem;
+        --fs-title-med: calc(var(--fs-pr) + 0.6em);
     }
     .btn {
         border: 2px solid;
@@ -48,6 +54,10 @@
         --fs-heading-bar: 1.2rem;
         --fs-heading-more: 1.2rem;
         --fs-title: 3.4rem;
+        --fs-pr: 1rem;
+        --fs-title-med: calc(var(--fs-pr) + 0.6em);
+        --fs-small-cards: 11.8px;
+        --square: 5em;
     }
     .btn {
         border: 2.7px solid;
@@ -64,7 +74,10 @@
         --fs-heading: 4.5rem;
         --fs-heading-bar: 1.3rem;
         --fs-heading-logo: 2.7rem;
-        --fs-title: 4.7rem;
+        --fs-title: 4.4rem;
+        --fs-pr: 1.1rem;
+        --fs-small-cards: 12.8px;
+        --square: 6em;
     }
 }
 
@@ -84,39 +97,49 @@
         display: flex;
         justify-content: flex-end;
         line-height: 0.9em;
+        padding-bottom: .3em;
     }
     .projects > .title {
         justify-content: flex-start;
         line-height: 0.9em;
+        padding-bottom: .3em;
     }
 
     .about {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 7em;
+        grid-template-rows: 40em 1fr 7em;
         grid-template-areas: 
         "img"
         "description"
         "socials"
     ;
+}
+    @media (max-width: 640px) {
+        .about {
+            grid-template-rows: .3fr 1fr 7em;
+        }
     }
+
 }
 /* lg */
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
+
     }
-    /* :root {
+    :root {
         --fs-heading: 4.2rem;
-    } */
+    }
 }
 
 /* xl */
 @media (min-width: 1280px) {
     .container {
         max-width: 1280px;
+        padding: 0em 10em;
     }
     :root {
-        --fs-heading: 5rem;
+        --fs-heading: 4.2rem;
     }
 }
 
@@ -124,6 +147,7 @@
 @media (min-width: 1536px) {
     .container {
         max-width: 1536px;
+        --fs-heading: 5rem;
     }
 
 

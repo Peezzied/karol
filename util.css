@@ -32,15 +32,15 @@
 }
 .font-title-med {
     font-family: Poppins, sans-serif;
-    font-size: 1.7rem;
+    font-size: var(--fs-title-med);
 }
 .font-pr {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: var(--fs-pr);
 }
 .font-subtitle {
     font-family: Poppins, sans-serif;
-    font-size: 1.7rem;
+    font-size: var(--fs-title-med);
 }
 .font-muted {
     color: #adadad;
@@ -95,8 +95,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0em 10em;
     /* margin: 0 auto; */
     
 }
