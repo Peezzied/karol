@@ -13,7 +13,8 @@ export const top = [
 export const technologies = [
     {
         img: './icons/js.svg',
-        name: 'Javascript'
+        name: 'Javascript',
+        category: 'web'
     },
     {
         img: './icons/photoshop.svg',
@@ -37,52 +38,118 @@ export const technologies = [
     },
     {
         img: './icons/excel.svg',
-        name: 'Excel'
+        name: 'Excel',
+        category: 'web'
     },
     {
         img: './icons/html.svg',
-        name: 'HTML'
+        name: 'HTML',
+        category: 'web'
     },
     {
         img: './icons/css.svg',
-        name: 'CSS'
+        name: 'CSS',
+        category: 'web'
     },
     {
         img: './icons/python.svg',
-        name: 'Python'
+        name: 'Python',
+        category: 'web'
     },
     {
         img: './icons/vba.svg',
-        name: 'VBA'
+        name: 'VBA',
+        category: 'web'
     },
     {
         img: './icons/react.svg',
-        name: 'React'
+        name: 'React',
+        category: 'web'
     },
     {
         img: './icons/native.svg',
-        name: 'React Native'
+        name: 'React Native',
+        category: 'web'
     },
     {
         img: './icons/github.svg',
-        name: 'Github'
+        name: 'Github',
+        category: 'web'
     },
     {
         img: './icons/vscode.svg',
-        name: 'VSCode'
+        name: 'VSCode',
+        category: 'web'
     },
     {
         img: './icons/bootstrap.svg',
-        name: 'Bootstrap'
+        name: 'Bootstrap',
+        category: 'web'
     },
     {
         img: './icons/wordpress.svg',
-        name: 'Wordpress'
+        name: 'Wordpress',
+        category: 'web'
     },
     {
         img: './icons/skript.png',
-        name: 'Skript'
-    }
+        name: 'Skript',
+        category: 'web'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ea-1f1f8.svg',
+        name: 'A1 Spanish',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fa-1f1f8.svg',
+        name: 'B2 English',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg',
+        name: 'Fast Learner',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e0.svg',
+        name: 'Practical',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50e.svg',
+        name: 'Meticulous',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9be.svg',
+        name: 'Resilient',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f5c2.svg',
+        name: 'Organized',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f525.svg',
+        name: 'Fervid',
+        color: '#089647',
+        category: 'soft'
+    },
+    {
+        img: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg',
+        color: '#089647',
+        name: 'Optimist',
+        category: 'soft'
+    },
 ]
 export const bentoData = [
     {

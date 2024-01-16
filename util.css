@@ -45,6 +45,9 @@
 .font-muted {
     color: #adadad;
 }
+.font-small-cards {
+    font-size: var(--fs-small-cards);
+}
 
 .dot i {
     color: #2196f3;
@@ -62,7 +65,18 @@
 }
 .card-hover:hover {
     border-color: var(--scheme-blue);
-
+    filter: drop-shadow(0 0 5px rgba(99, 121, 218, 0.5));
+    outline: none;
+}
+.card-hover-soft {
+    border: 2px solid;
+    border-color: #04632f;
+    transition: all .2s;
+}
+.card-hover-soft:hover {
+    border-color: var(--scheme-blue);
+    filter: drop-shadow(0 0 5px rgba(99, 121, 218, 0.5));
+    outline: none;
 }
 
 .subtitle {
@@ -86,6 +100,7 @@
     height: 0.1em;
     background-color: var(--scheme-blue);
     transition: width 300ms, transform 300ms;
+    
 }
 .subtitle div:hover::after, .subtitle div:focus::after {
     width: 100%;

@@ -1,13 +1,30 @@
 import {top, technologies, bentoData} from './index.js'
 
 const topCards = document.querySelectorAll('.cards-container:nth-of-type(2) div')
-const multimediaElement = document.querySelector('.cards-container:nth-of-type(4) .cards')
-const web = document.querySelector('.cards-container:nth-of-type(5) .cards')
+const softSkills = document.querySelector('.cards-container:nth-of-type(4) .cards')
+const multimediaElement = document.querySelector('.cards-container:nth-of-type(5) .cards')
+const web = document.querySelector('.cards-container:nth-of-type(6) .cards')
 
 const bentoCard = document.querySelectorAll('.projects .bento > div')
 const bentoTitle = document.querySelectorAll('.projects .bento > div .description div > div:nth-of-type(1)')
 const bentoBody = document.querySelectorAll('.projects .bento > div .description div > div:nth-of-type(2)')
 console.log(multimediaElement)
+
+const keyframes = [
+    {borderColor: '#57bd84'},
+    {borderColor: '#2196f3'}
+]
+const over = {
+    duration: 200,
+    easing: 'ease-in-out',
+    fill: 'forwards'
+}
+const out = {
+    duration: 200,
+    easing: 'ease-in-out',
+    fill: 'forwards',
+    direction: 'reverse'
+}
 
 top.forEach((item, index)=>{
     addCardList(topCards, index,
@@ -29,15 +46,22 @@ technologies.sort((a, b)=> {
 });
 technologies.forEach((item)=>{
     const content = `
-    <li class="corner-normal card-hover">
+    <li class="corner-normal ${item.category === 'soft' ? 'card-hover-soft' : 'card-hover'}">
         <img src="${item.img}" loading="lazy" alt="${item.name} logo">
         <p class="font-pr">${item.name}</p>
     </li> `
-    if (item.category === 'multimedia'){
-        addCard(multimediaElement, content)
-    } else {
-        addCard(web, content)
+    switch(item.category){
+        case "multimedia":
+            addCard(multimediaElement, content)
+            break;
+        case "web":
+            addCard(web, content)
+            break;
+        case "soft":
+            addCard(softSkills, content)
+            break;
     }
+        
 })
 
 bentoData.forEach((item, index)=>{
