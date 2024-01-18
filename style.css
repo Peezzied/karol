@@ -17,6 +17,7 @@
     padding: 0;
     font: inherit;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -384,6 +385,13 @@ body > div {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "a a a b b b"
+        "a a a c c c"
+        "a a a c c c"
+        "d d d c c c"
+        "d d d e f g"
+    ;
     height: 100%;
     gap: 1em;
 }
@@ -408,7 +416,6 @@ body > div {
     display:inline-block;
     border-radius: 15px;
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
     opacity: 0;
     transition: all .4s;
 }
@@ -422,7 +429,7 @@ body > div {
     column-gap: 1em;
     width: 100%;
     bottom: 0%;
-    padding: 5%;
+    padding: clamp(1em, 5%, 2em);
     filter: blur(3px);
     transition: filter .1s ease-in-out;
 }
@@ -453,34 +460,49 @@ body > div {
     transition: all .2s;
     opacity: 0;
     width: 15%;
-    font-size: 1.5vw;
 }
+/* .projects .bento > div[data-type="exclude"] .description > a {
+    font-size: 10px;
+} */
 .projects .bento > div .description > a i {
     background-color: white;
     border-radius: 20em;
-    padding: 20%;
+    padding: clamp(10px, 20%, 10px);
     transition: all .3s;
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 .projects .bento > div .description > a:hover i {
     background-color: var(--scheme-surface-color);
     color: white;
 } 
-.projects .bento > div:nth-of-type(1) {
-    grid-column: span 3;
-    grid-row: span 3;
+.projects .bento > .card:nth-of-type(1) {
+    /* grid-column: 3;
+    grid-row: span 3; */
+    grid-area: a;
 }
-.projects .bento > div:nth-of-type(2) {
-    grid-column: span 3;
+.projects .bento > .card:nth-of-type(2) {
+    /* grid-column: span 3; */
+    grid-area: b;
 }
-.projects .bento > div:nth-of-type(3) {
-    grid-column: span 3;
-    grid-row: span 3;
+.projects .bento > .card:nth-of-type(3) {
+    /* grid-column: span 3; */
+    /* grid-row: span 3; */
+    grid-area: c;
 }
-.projects .bento > div:nth-of-type(4) {
-    grid-column: span 3;
-    grid-row: span 3;
+.projects .bento > .card:nth-of-type(4) {
+    /* grid-column: span 3;
+    grid-row: span 3; */
+    grid-area: d;
 }
-
+.projects .bento > .card:nth-of-type(5) {
+    grid-area: e;
+}
+.projects .bento > .card:nth-of-type(6) {
+    grid-area: f;
+}
+.projects .bento > .card:nth-of-type(7) {
+    grid-area: g;
+}
 
 .projects .bento > div:hover .gradient {
     opacity: 1;

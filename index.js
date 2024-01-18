@@ -167,6 +167,18 @@ export const bentoData = [
     {
         title: 'Four',
         body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
+    },
+    {
+        title: 'Four',
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
+    },
+    {
+        title: 'Four',
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
+    },
+    {
+        title: 'Four',
+        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolores quos magnam temporibus architecto ea corporis aperiam perferendis optio ipsa.'
     }
 
 ]

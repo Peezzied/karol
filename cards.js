@@ -1,14 +1,17 @@
 import {top, technologies, bentoData} from './index.js'
 
+let previousProperty = [];
 const topCards = document.querySelectorAll('.cards-container:nth-of-type(2) div')
 const softSkills = document.querySelector('.cards-container:nth-of-type(4) .cards')
 const multimediaElement = document.querySelector('.cards-container:nth-of-type(5) .cards')
 const web = document.querySelector('.cards-container:nth-of-type(6) .cards')
+const mediaQuery = window.matchMedia('(max-width: 640px)');
 
 const bentoCard = document.querySelectorAll('.projects .bento > div')
 const bentoTitle = document.querySelectorAll('.projects .bento > div .description div > div:nth-of-type(1)')
 const bentoBody = document.querySelectorAll('.projects .bento > div .description div > div:nth-of-type(2)')
 console.log(multimediaElement)
+const bentoDesc = document.querySelectorAll('.projects .bento > div .description')
 
 const keyframes = [
     {borderColor: '#57bd84'},
@@ -65,12 +68,17 @@ technologies.forEach((item)=>{
 })
 
 bentoData.forEach((item, index)=>{
-    if (bentoCard[index].getAttribute('data-type') === 'include') {
-        addCardList(bentoTitle, index, item.title)
-        addCardList(bentoBody, index, item.body)
-    }
+    addCardList(bentoTitle, index, item.title)
+    addCardList(bentoBody, index, item.body)
+
     // console.log(bentoCard[index].getAttribute('data-type') === 'include' ? bentoCard[index] : null)
 })
+bentoDesc.forEach((item)=>{
+    if (item.parentElement.getAttribute('data-type') === "exclude") {
+        item.classList.add('exclusion')
+    }
+})
+
 
 function addCardList(data, index, content){
     data[index].innerHTML = content
@@ -78,3 +86,11 @@ function addCardList(data, index, content){
 function addCard(data, content){
     data.innerHTML += content
 }
+
+mediaQuery.addEventListener("change", (e)=>{
+    if (e.matches){
+
+    } else {
+
+    }
+})

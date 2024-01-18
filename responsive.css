@@ -79,6 +79,10 @@
         --fs-small-cards: 12.8px;
         --square: 6em;
     }
+    .projects .bento > div .description.exclusion > div > div {
+        display: none;
+    }
+
 }
 
 /* md */
@@ -114,10 +118,36 @@
         "socials"
     ;
 }
+
+
     @media (max-width: 640px) {
         .about {
             grid-template-rows: .3fr 1fr 7em;
         }
+        .projects .bento {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+
+            ;
+            height: 100%;
+            gap: 1em;
+        }
+        .projects .bento > .card {
+            height: 15em;
+        }
+        .projects .bento > div .description.exclusion > div > div {
+            display: block;
+        }
+
     }
 
 }
