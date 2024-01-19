@@ -26,6 +26,9 @@
     .btn {
         border: 1.5px solid;
     }
+    .about .socials {
+        --socials-size: 50px;
+    }
     
 }
 @media (min-width: 404px) {
@@ -34,15 +37,19 @@
         padding: 0em 2em;
     }
     :root {
-        --fs-heading: 2.9rem;
+        --fs-heading: 2.6rem;
         --fs-heading-bar: 1rem;
         --fs-heading-more: 1rem;
         --fs-heading-logo: 2rem;
         --fs-pr: 0.9rem;
         --fs-title-med: calc(var(--fs-pr) + 0.6em);
+        
     }
     .btn {
         border: 2px solid;
+    }
+    .about .socials {
+        --socials-size: 60px;
     }
 }
 @media (min-width: 475px) {
@@ -50,7 +57,7 @@
         max-width: 475px;
     }
     :root {
-        --fs-heading: 3.3rem;
+        --fs-heading: 3.2rem;
         --fs-heading-bar: 1.2rem;
         --fs-heading-more: 1.2rem;
         --fs-title: 3.4rem;
@@ -61,6 +68,9 @@
     }
     .btn {
         border: 2.7px solid;
+    }
+    .about .socials {
+        --socials-size: 70px;
     }
 
 }
@@ -109,21 +119,9 @@
         padding-bottom: .3em;
     }
 
-    .about {
-        grid-template-columns: 1fr;
-        grid-template-rows: 40em 1fr 7em;
-        grid-template-areas: 
-        "img"
-        "description"
-        "socials"
-    ;
-}
 
 
     @media (max-width: 640px) {
-        .about {
-            grid-template-rows: .3fr 1fr 7em;
-        }
         .projects .bento {
             display: grid;
             grid-template-columns: 1fr;
@@ -147,7 +145,12 @@
         .projects .bento > div .description.exclusion > div > div {
             display: block;
         }
-
+        .about .img > div {
+            height: 20em;
+        }
+        .about .description {
+            height: 40em;
+        }
     }
 
 }
