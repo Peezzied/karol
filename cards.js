@@ -1,4 +1,5 @@
 import {top, technologies, bentoData} from './index.js'
+import { addCard, addCardList } from './utils.js';
 
 let previousProperty = [];
 const topCards = document.querySelectorAll('.cards-container:nth-of-type(2) div')
@@ -79,13 +80,6 @@ bentoDesc.forEach((item)=>{
     }
 })
 
-
-function addCardList(data, index, content){
-    data[index].innerHTML = content
-}
-function addCard(data, content){
-    data.innerHTML += content
-}
 
 mediaQuery.addEventListener("change", (e)=>{
     if (e.matches){

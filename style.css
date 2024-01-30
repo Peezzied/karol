@@ -100,12 +100,75 @@ body > div {
     font-family: 'Poppins', sans-serif;
     animation-name: defaultLoadLeft;
     display: flex;
+    text-decoration: none;
+    color: white;
 }
 .navbar .menu {
     font-size: var(--fs-heading-logo);
     text-align: center;
     animation-name: defaultLoadRight;
+    opacity: 0.7;
+    position: relative;
+    padding: 7px;
+    border-radius: 17px;
+    display: block;
+    z-index: 200;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
 }
+.navbar .menu:hover {
+    background-color: #222222;
+}
+.navbar .menu:active svg {
+    opacity: 0.1;
+}
+.navbar .menu svg {
+    color: white;
+    opacity: 1;
+    transition: all 0.2s;
+    height: var(--fs-heading-logo);
+    width: var(--fs-heading-logo); 
+}
+
+
+
+.navbar .menu-list {
+    position: fixed;
+    z-index: 100;
+    top: -100%;
+    left: 0;
+    height: 100dvh; width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: .3em;
+    background-color: #1a1a1a;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+.navbar .menu-list li a {
+    display: flex;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    padding-left: 7em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.541);
+    transform: translateX(0);
+    transition: all .3s;
+    align-items: center;
+    gap: 0.7em;
+}
+.navbar .menu-list li a:hover {
+    color: white;
+    transform: translateX(20px);
+}
+.navbar .menu-list.active {
+    top: 0;
+    opacity: 1;
+}
+
 .logo i {
     animation-name: dot;
 }

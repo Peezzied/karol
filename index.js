@@ -182,3 +182,35 @@ export const bentoData = [
     }
 
 ]
+export const menuData = [
+    {
+        name: 'Skills & Technologies',
+        icon: 'ri-code-s-slash-line',
+        url: '#'
+    },
+    {
+        name: 'Education',
+        icon: 'ri-briefcase-3-line',
+        url: '#'
+    },
+    {
+        name: 'Projects',
+        icon: 'ri-hammer-line',
+        url: '#'
+    },
+    {
+        name: 'Github',
+        icon: 'ri-github-line',
+        url: '#'
+    },
+    {
+        name: 'Discord',
+        icon: 'ri-discord-line',
+        url: '#'
+    },
+    {
+        name: 'YouTube',
+        icon: 'ri-youtube-line',
+        url: '#'
+    }
+]

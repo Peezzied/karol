@@ -18,11 +18,13 @@
     <div>
         <nav class="navbar selectNone container" id="navigation">
             <div class="logo">
-                <div class="logo dot">Karol<i class="animated animate-med animated-smooth">.</i></div>
+                <div class="logo dot" onclick="goTo('#')">Karol<i class="animated animate-med animated-smooth">.</i></div>
             </div>
-            <div class="menu">
-                <i class="ri-menu-3-line menu"></i>
-            </div>
+            <button class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path></svg>
+            </button>
+            <ul class="menu-list">
+            </ul>
         </nav>
         <header class="head container" id="heading">
             <div class="head-flex">
@@ -186,6 +188,7 @@
     </script>
     <script src="country_animate.js"></script>
     <script type="module" src="cards.js"></script>
+    <script type="module" src="nav.js"></script>
     <script src="utils.js"></script>
 </body>
 </html>

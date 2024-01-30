@@ -151,6 +151,11 @@
         .about .description {
             height: 40em;
         }
+        .navbar .menu-list li a {
+            display: flex;
+            padding-left: 0em;
+            justify-content: center;
+        }
     }
 
 }
