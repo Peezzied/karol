@@ -182,35 +182,52 @@ export const bentoData = [
     }
 
 ]
+export const socialsData = [
+    {
+        name: 'discord',
+        icon: 'ri-discord-fill',
+        url: 'https://discord.com'
+    },
+    {
+        name: 'youtube',
+        icon: 'ri-youtube-fill',
+        url: 'https://youtube.com'
+    },
+    {
+        name: 'github',
+        icon: 'ri-github-fill',
+        url: 'https://github.com'
+    }
+]
 export const menuData = [
     {
         name: 'Skills & Technologies',
         icon: 'ri-code-s-slash-line',
-        url: '#'
+        url: '#skills'
     },
     {
         name: 'Education',
         icon: 'ri-briefcase-3-line',
-        url: '#'
+        url: '#cards'
     },
     {
         name: 'Projects',
         icon: 'ri-hammer-line',
-        url: '#'
+        url: '#projects'
     },
     {
         name: 'Github',
         icon: 'ri-github-line',
-        url: '#'
+        url: socialsData[2].url
     },
     {
         name: 'Discord',
         icon: 'ri-discord-line',
-        url: '#'
+        url: socialsData[0].url
     },
     {
         name: 'YouTube',
         icon: 'ri-youtube-line',
-        url: '#'
+        url: socialsData[1].url
     }
 ]

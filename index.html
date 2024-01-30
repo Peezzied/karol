@@ -23,7 +23,7 @@
             <button class="menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path></svg>
             </button>
-            <ul class="menu-list">
+            <ul class="menu-list" data-status="inactive">
             </ul>
         </nav>
         <header class="head container" id="heading">
@@ -60,18 +60,15 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus harum blanditiis porro! Nesciunt autem, quisquam obcaecati saepe aspernatur maiores possimus nisi quas laboriosam facere nostrum quaerat atque mollitia. Animi soluta sunt eum! Ipsa dicta ut sapiente corporis ullam dolorem magni velit neque reprehenderit, doloremque distinctio itaque aliquam sed esse, assumenda incidunt asperiores! Expedita ad veniam libero quo iure fuga harum error quis odio blanditiis, id distinctio quasi, provident sequi vero doloremque maiores perspiciatis? Vitae similique laboriosam doloremque illum, ex repellendus numquam molestiae quisquam eos! Ab officiis voluptas explicabo debitis nihil ullam asperiores. Laudantium mollitia quam nisi ducimus culpa enim.
     
                         </div>
-                        <div class="socials">
-                            <a class="item1" href="https://discord.com" target="_blank"><i class="ri-discord-fill"></i></a>
-                            <a class="item2" href="https://youtube.com" target="_blank"><i class="ri-youtube-fill"></i></a>
-                            <a class="item3" href="https://github.com" target="_blank"><i class="ri-github-fill"></i></a>         
+                        <div class="socials">  
                         </div>
                     </div>
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="title font-title dot"><span>What can I do<i>?</i></span></div>
-                <div class="cards-container">
+                <div class="cards-container" id="cards">
                     <div class="font-pr corner-normal card-hover"></div>
                     <div class="font-pr corner-normal card-hover"></div>
                 </div>
@@ -93,7 +90,7 @@
             
             <div class="divider"></div>
 
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="title font-title dot"><span>My Projects<i>.</i></span></div>
                 <div class="bento">
                     <div class="card image" data-type="include">
@@ -189,6 +186,7 @@
     <script src="country_animate.js"></script>
     <script type="module" src="cards.js"></script>
     <script type="module" src="nav.js"></script>
+    <script type="module" src="socials.js"></script>
     <script src="utils.js"></script>
 </body>
 </html>
